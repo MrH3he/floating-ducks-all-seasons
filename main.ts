@@ -49,7 +49,7 @@ if (game.ask("Play All Seasons", "Season and Episode Selection")) {
     if (game.ask("Test Pilot", "Others")) {
         music.stopAllSounds()
         test_pilot()
-    } else if (false) {
+    } else if (game.ask("Episode 1: Exploring", "Others")) {
     	
     }
 }
