@@ -45,11 +45,11 @@ if (game.ask("Play All Seasons", "Season and Episode Selection")) {
     music.stopAllSounds()
     play_full = 1
     test_pilot()
-} else {
-    if (game.ask("Season 1 (Early Access)", "Season 2 (Coming Soon)")) {
-        if (game.ask("Test Pilot", "Others")) {
-            music.stopAllSounds()
-            test_pilot()
-        }
+} else if (game.ask("Season 1 (Early Access)", "Season 2 (Coming Soon)")) {
+    if (game.ask("Test Pilot", "Others")) {
+        music.stopAllSounds()
+        test_pilot()
+    } else if (false) {
+    	
     }
 }
