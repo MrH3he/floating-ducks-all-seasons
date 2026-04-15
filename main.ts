@@ -41,13 +41,15 @@ let play_full = 0
 music.play(music.createSong(assets.song`floating_ducks_theme`), music.PlaybackMode.LoopingInBackground)
 game.splash("Floating Ducks: ALl Seasons")
 play_full = 0
-if (game.ask("Play Full Season", "Episode Selection")) {
+if (game.ask("Play All Seasons", "Season and Episode Selection")) {
     music.stopAllSounds()
     play_full = 1
     test_pilot()
 } else {
-    if (game.ask("Test Pilot")) {
-        music.stopAllSounds()
-        test_pilot()
+    if (game.ask("Season 1")) {
+        if (game.ask("Test Pilot", "Others")) {
+            music.stopAllSounds()
+            test_pilot()
+        }
     }
 }
