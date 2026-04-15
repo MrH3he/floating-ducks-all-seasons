@@ -1,6 +1,6 @@
 function test_pilot () {
     if (play_full == 1) {
-        game.splash("Test Pilot", "Quack meets Quick")
+        game.splash("Season 1: Test Pilot", "Quack meets Quick")
     }
     quack = sprites.create(img`
         . . . . . . . . . . . . . . . . 
@@ -46,7 +46,7 @@ if (game.ask("Play All Seasons", "Season and Episode Selection")) {
     play_full = 1
     test_pilot()
 } else {
-    if (game.ask("Season 1")) {
+    if (game.ask("Season 1 (Early Access)", "Season 2 (Coming Soon)")) {
         if (game.ask("Test Pilot", "Others")) {
             music.stopAllSounds()
             test_pilot()
